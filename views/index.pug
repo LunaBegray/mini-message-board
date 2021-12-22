@@ -3,3 +3,6 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  for message in messages 
+    div #{message.text + "   sent by:" + message.user + "       date:  " + message.added}
+  a(href="/new") Add a new message! 

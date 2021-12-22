@@ -1,0 +1,8 @@
+extends layout 
+
+block content 
+  form(method="POST" action="/new")
+    h1 enter your message and name! 
+    input(type='text', name="message", value ='')
+    input(type='text', name="author", value = '')
+    input(value="Submit", type='submit')
